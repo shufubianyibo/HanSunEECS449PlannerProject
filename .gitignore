@@ -1,0 +1,8 @@
+.jac/
+node_modules/
+dist/
+data/
+*.sqlite3*
+__pycache__/
+.DS_Store
+jac.local.toml
