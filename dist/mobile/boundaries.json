@@ -1,0 +1,124 @@
+{
+  "version": 1,
+  "boundaries": {
+    "[\"web\",\"core/planner.jac\",\"func\",\"dashboard\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "dashboard",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {
+        "day": "str",
+        "budget": "int",
+        "refresh": "str"
+      },
+      "result": "dict",
+      "native_contract": {},
+      "unchecked": []
+    },
+    "[\"web\",\"core/planner.jac\",\"func\",\"save_task\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "save_task",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {
+        "title": "str",
+        "course": "str",
+        "due": "str",
+        "priority": "int",
+        "minutes": "int",
+        "task_id": "str"
+      },
+      "result": "dict",
+      "native_contract": {},
+      "unchecked": []
+    },
+    "[\"web\",\"core/planner.jac\",\"func\",\"set_done\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "set_done",
+      "placement": "server",
+      "callers": [
+        "client"
+      ],
+      "parameters": {
+        "task_id": "str",
+        "done": "bool"
+      },
+      "result": "dict",
+      "native_contract": {},
+      "unchecked": []
+    }
+  },
+  "effects": {
+    "[\"web\",\"core/planner.jac\",\"func\",\"dashboard\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "dashboard",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    },
+    "[\"web\",\"core/planner.jac\",\"func\",\"save_task\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "save_task",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    },
+    "[\"web\",\"core/planner.jac\",\"func\",\"set_done\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "set_done",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    },
+    "[\"web\",\"core/planner.jac\",\"func\",\"delete_task\"]": {
+      "app": "web",
+      "module": "core/planner.jac",
+      "kind": "func",
+      "name": "delete_task",
+      "reads": [
+        "*"
+      ],
+      "writes": [
+        "*"
+      ],
+      "assumptions": [],
+      "unknown": true,
+      "observed_tags": []
+    }
+  },
+  "native_host_imports": {}
+}

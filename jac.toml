@@ -1,0 +1,38 @@
+[project]
+name = "course-compass"
+version = "1.0.0"
+jac-version = "==0.37.11"
+default-app = "web"
+
+[apps.web]
+kind = "web-app"
+path = "web"
+
+[apps.mobile]
+kind = "mobile"
+path = "mobile"
+platform = "android"
+
+[apps.cli]
+kind = "cli"
+path = "cli"
+
+[serve]
+host = "127.0.0.1"
+port = 8000
+
+[dependencies.npm]
+react = "^19.2.0"
+react-dom = "^19.2.0"
+react-native-web = "^0.21.0"
+
+[client.app_meta_data]
+title = "Course Compass | Make room for what matters"
+description = "A calmer way to plan coursework, one focused day at a time."
+theme_color = "#173e35"
+
+[test]
+directories = ["tests"]
+
+[scale.admin]
+enabled = false
